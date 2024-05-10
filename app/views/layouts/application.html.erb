@@ -7,12 +7,16 @@
     <title><%= content_for?(:title) ? yield(:title) : "PhotoApp" %></title>
     <%= csrf_meta_tags %>
 
-    <%= stylesheet_link_tag "application", "data-turbo-track": "reload" %>
-
-    <!-- For third-generation iPad with high-resolution Retina display: -->
-    <!-- Size should be 144 x 144 pixels -->
-
+     <%= stylesheet_link_tag "application", :media => "all" %>
     <%= javascript_include_tag "application" %>
+ 
+    <!-- Add Stripe Javascript -->
+    <%= javascript_include_tag "https://js.stripe.com/v2/" %>
+
+   
+
+    <!-- Add my own "custom.css" CSS file on 'stylesheets' folder to change NavBar background color -->
+    <%= stylesheet_link_tag "custom", "data-turbo-track": "reload" %>
 
     <!-- Le HTML5 shim, for IE6-8 support of HTML elements -->
     <!--[if lt IE 9]>
@@ -81,6 +85,7 @@
       </footer>
 
     </div> <!-- /container -->
+    
 
   </body>
 </html>
