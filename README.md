@@ -1,5 +1,5 @@
-# photoApp
-- This app(photoApp) Build with RubyOnRails & Bootstrap
+# PhotoApp
+- This app(PhotoApp) Build with RubyOnRails & Bootstrap
 - Use Devise for authentication
 - Use Stripe API for accept payment
 - In this app main functionality is integrate of payment API, account confirmation and password reset.
