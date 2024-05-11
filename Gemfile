@@ -37,6 +37,13 @@ gem 'devise-bootstrap-views'
 
 gem 'jquery-rails'
 
+# Image uploder gem [https://github.com/carrierwaveuploader/carrierwave]
+gem 'carrierwave'
+
+# Image resizeing gem [https://github.com/minimagick/minimagick]
+gem "mini_magick"
+
+
 # Use Kredis to get higher-level data types in Redis [https://github.com/rails/kredis]
 # gem "kredis"
 

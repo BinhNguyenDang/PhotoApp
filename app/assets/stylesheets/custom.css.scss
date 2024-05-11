@@ -114,3 +114,35 @@
     color: #fff;
     
     }
+
+    .modal-dialog {
+      width: 1500px; /* Fixed width of the modal */
+      height: 800px; /* Fixed height of the modal */
+      margin: auto; /* Centers the modal vertically and horizontally */
+      display: flex; /* Enables flexbox to center the content */
+      align-items: center; /* Centers the modal content vertically */
+      justify-content: center; /* Centers the modal content horizontally */
+    }
+    
+    .modal-content {
+      width: 100%; /* Ensures the modal content expands to fill the dialog */
+      height: 100%; /* Ensures the modal content expands to fill the dialog */
+      display: flex; /* Enables flexbox for inner content */
+      align-items: center; /* Aligns the image vertically */
+      justify-content: center; /* Aligns the image horizontally */
+    }
+    
+    .modal-body {
+      width: 100%; /* Full width of the content area */
+      height: 100%; /* Full height of the content area */
+      padding: 0; /* Removes padding inside the modal body for full image display */
+      display: flex; /* Ensures flexbox properties are applied */
+      align-items: center; /* Ensures the image is centered vertically */
+      justify-content: center; /* Ensures the image is centered horizontally */
+    }
+    
+    .full-size-image {
+      max-width: 100%; /* Limits the image width to the modal content size */
+      max-height: 100%; /* Limits the image height to the modal content size */
+      display: block; /* Ensures the image is block level to remove bottom space */
+    }
