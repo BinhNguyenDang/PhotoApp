@@ -1,5 +1,7 @@
 <% if current_user %>
-  <h3>Welcome: <%= current_user.email %></h3>
+  <h3 class="welcome-message">Welcome: <%= current_user.email %></h3>
+  <%= link_to "Your Images", images_path, class: "btn btn-primary" %>
+  <%= link_to "Upload Image", new_image_path, class: "btn btn-success" %>
 <% else %>
   <div class="container" id="home-container">
         <div class="p-5 mb-4 bg-light border rounded-3 text-center text-white" id="jumbotron">
